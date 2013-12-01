@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShipB.SpeakOutCA.Data.Models
 {
-    public class Contact
+    public class Contact : IContact
     {
         public string Name { get; set; }
         public string Title { get; set; }
@@ -18,6 +18,14 @@ namespace ShipB.SpeakOutCA.Data.Models
         public string City { get; set; }
         public string State { get; set; }
         public string PostalCode { get; set; }
+        
+        public IEnumerable<IContact> GetContacts()
+        {
+            var contacts = new List<Contact>();
 
+
+
+            return contacts;
+        }
     }
 }

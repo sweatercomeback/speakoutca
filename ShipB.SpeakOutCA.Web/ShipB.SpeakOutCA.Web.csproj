@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8EC67E0-6612-4152-BD52-40F665124E4C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShipB.SpeakOutCA.Web</RootNamespace>
+    <AssemblyName>ShipB.SpeakOutCA.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".bowerrc" />
+    <Content Include=".editorconfig" />
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include=".jshintrc" />
+    <Content Include=".travis.yml" />
+    <Content Include="bower.json" />
+    <Content Include="package.json" />
+    <Content Include="test\.jshintrc" />
+    <Content Include="app\.buildignore" />
+    <Content Include="app\.htaccess" />
+    <Content Include="app\bower_components\angular-cookies\.bower.json" />
+    <Content Include="app\bower_components\angular-cookies\bower.json" />
+    <Content Include="app\bower_components\angular-cookies\README.md" />
+    <Content Include="app\bower_components\angular-mocks\.bower.json" />
+    <Content Include="app\bower_components\angular-mocks\bower.json" />
+    <Content Include="app\bower_components\angular-mocks\README.md" />
+    <Content Include="app\bower_components\angular-resource\.bower.json" />
+    <Content Include="app\bower_components\angular-resource\bower.json" />
+    <Content Include="app\bower_components\angular-resource\README.md" />
+    <Content Include="app\bower_components\angular-sanitize\.bower.json" />
+    <Content Include="app\bower_components\angular-sanitize\bower.json" />
+    <Content Include="app\bower_components\angular-sanitize\README.md" />
+    <Content Include="app\bower_components\angular-scenario\.bower.json" />
+    <Content Include="app\bower_components\angular-scenario\bower.json" />
+    <Content Include="app\bower_components\angular-scenario\README.md" />
+    <Content Include="app\bower_components\angular\.bower.json" />
+    <Content Include="app\bower_components\angular\bower.json" />
+    <Content Include="app\bower_components\bootstrap-sass\.bower.json" />
+    <Content Include="app\bower_components\bootstrap-sass\bower.json" />
+    <Content Include="app\bower_components\bootstrap-sass\browserstack.json" />
+    <Content Include="app\bower_components\bootstrap-sass\CNAME" />
+    <Content Include="app\bower_components\bootstrap-sass\composer.json" />
+    <Content Include="app\bower_components\bootstrap-sass\CONTRIBUTING.md" />
+    <Content Include="app\bower_components\bootstrap-sass\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\bower_components\bootstrap-sass\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\bower_components\bootstrap-sass\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\bower_components\bootstrap-sass\DOCS-LICENSE" />
+    <Content Include="app\bower_components\bootstrap-sass\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\bower_components\bootstrap-sass\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\bower_components\bootstrap-sass\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\bower_components\bootstrap-sass\Gemfile" />
+    <Content Include="app\bower_components\bootstrap-sass\Gemfile.lock" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\bootstrap.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_alerts.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_badges.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_breadcrumbs.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_button-groups.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_buttons.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_carousel.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_close.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_code.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_component-animations.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_dropdowns.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_forms.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_glyphicons.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_grid.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_input-groups.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_jumbotron.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_labels.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_list-group.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_media.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_mixins.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_modals.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_navbar.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_navs.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_normalize.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_pager.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_pagination.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_panels.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_popovers.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_print.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_progress-bars.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_responsive-utilities.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_scaffolding.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_tables.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_theme.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_thumbnails.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_tooltip.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_type.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_utilities.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_variables.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\lib\_wells.scss" />
+    <Content Include="app\bower_components\bootstrap-sass\LICENSE" />
+    <Content Include="app\bower_components\bootstrap-sass\LICENSE-MIT" />
+    <Content Include="app\bower_components\bootstrap-sass\package.json" />
+    <Content Include="app\bower_components\bootstrap-sass\Rakefile" />
+    <Content Include="app\bower_components\bootstrap-sass\README.md" />
+    <Content Include="app\bower_components\bootstrap-sass\_config.yml" />
+    <Content Include="app\bower_components\es5-shim\.bower.json" />
+    <Content Include="app\bower_components\es5-shim\.gitignore" />
+    <Content Include="app\bower_components\es5-shim\CHANGES" />
+    <Content Include="app\bower_components\es5-shim\CONTRIBUTORS.md" />
+    <Content Include="app\bower_components\es5-shim\es5-sham.map" />
+    <Content Include="app\bower_components\es5-shim\es5-shim.map" />
+    <Content Include="app\bower_components\es5-shim\LICENSE" />
+    <Content Include="app\bower_components\es5-shim\package.json" />
+    <Content Include="app\bower_components\es5-shim\README.md" />
+    <Content Include="app\bower_components\jquery\.bower.json" />
+    <Content Include="app\bower_components\jquery\.gitignore" />
+    <Content Include="app\bower_components\jquery\component.json" />
+    <Content Include="app\bower_components\jquery\composer.json" />
+    <Content Include="app\bower_components\jquery\jquery.min.map" />
+    <Content Include="app\bower_components\jquery\package.json" />
+    <Content Include="app\bower_components\jquery\README.md" />
+    <Content Include="app\bower_components\json3\.bower.json" />
+    <Content Include="app\bower_components\json3\bower.json" />
+    <Content Include="app\bower_components\json3\LICENSE" />
+    <Content Include="app\bower_components\json3\README.md" />
+    <Content Include="app\styles\main.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\404.html" />
+    <Content Include="app\bower_components\angular-cookies\angular-cookies.js" />
+    <Content Include="app\bower_components\angular-cookies\angular-cookies.min.js" />
+    <Content Include="app\bower_components\angular-mocks\angular-mocks.js" />
+    <Content Include="app\bower_components\angular-resource\angular-resource.js" />
+    <Content Include="app\bower_components\angular-resource\angular-resource.min.js" />
+    <Content Include="app\bower_components\angular-sanitize\angular-sanitize.js" />
+    <Content Include="app\bower_components\angular-sanitize\angular-sanitize.min.js" />
+    <Content Include="app\bower_components\angular-scenario\angular-scenario.js" />
+    <Content Include="app\bower_components\angular-scenario\jstd-scenario-adapter-config.js" />
+    <Content Include="app\bower_components\angular-scenario\jstd-scenario-adapter.js" />
+    <Content Include="app\bower_components\angular\angular.js" />
+    <Content Include="app\bower_components\angular\angular.min.js" />
+    <Content Include="app\bower_components\bootstrap-sass\about.html" />
+    <Content Include="app\bower_components\bootstrap-sass\components.html" />
+    <Content Include="app\bower_components\bootstrap-sass\css.html" />
+    <Content Include="app\bower_components\bootstrap-sass\customize.html" />
+    <Content Include="app\bower_components\bootstrap-sass\dist\css\bootstrap-theme.css" />
+    <Content Include="app\bower_components\bootstrap-sass\dist\css\bootstrap-theme.min.css" />
+    <Content Include="app\bower_components\bootstrap-sass\dist\css\bootstrap.css" />
+    <Content Include="app\bower_components\bootstrap-sass\dist\css\bootstrap.min.css" />
+    <Content Include="app\bower_components\bootstrap-sass\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\bower_components\bootstrap-sass\dist\js\bootstrap.js" />
+    <Content Include="app\bower_components\bootstrap-sass\dist\js\bootstrap.min.js" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\css\docs.css" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\css\pygments-manni.css" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\ico\apple-touch-icon-144-precomposed.png" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\ico\favicon.png" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\js\application.js" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\js\customizer.js" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\js\filesaver.js" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\js\holder.js" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\js\ie8-responsive-file-warning.js" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\js\jszip.js" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\js\less.js" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\js\raw-files.js" />
+    <Content Include="app\bower_components\bootstrap-sass\docs-assets\js\uglify.js" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\carousel\carousel.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\carousel\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\grid\grid.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\grid\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\jumbotron-narrow\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\jumbotron-narrow\jumbotron-narrow.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\jumbotron\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\jumbotron\jumbotron.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\justified-nav\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\justified-nav\justified-nav.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\navbar-fixed-top\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\navbar-fixed-top\navbar-fixed-top.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\navbar-static-top\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\navbar-static-top\navbar-static-top.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\navbar\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\navbar\navbar.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\non-responsive\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\non-responsive\non-responsive.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\offcanvas\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\offcanvas\offcanvas.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\offcanvas\offcanvas.js" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\carousel.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\grid.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\jumbotron-narrow.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\jumbotron.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\justified-nav.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\navbar-fixed.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\navbar-static.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\navbar.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\non-responsive.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\offcanvas.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\sign-in.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\starter-template.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\sticky-footer-navbar.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\sticky-footer.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\screenshots\theme.jpg" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\signin\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\signin\signin.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\starter-template\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\starter-template\starter-template.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\sticky-footer-navbar\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\sticky-footer-navbar\sticky-footer-navbar.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\sticky-footer\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\sticky-footer\sticky-footer.css" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\theme\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\examples\theme\theme.css" />
+    <Content Include="app\bower_components\bootstrap-sass\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\bower_components\bootstrap-sass\getting-started.html" />
+    <Content Include="app\bower_components\bootstrap-sass\Gruntfile.js" />
+    <Content Include="app\bower_components\bootstrap-sass\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\javascript.html" />
+    <Content Include="app\bower_components\bootstrap-sass\js\affix.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\alert.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\button.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\carousel.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\collapse.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\dropdown.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\modal.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\popover.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\scrollspy.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tab.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\index.html" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\affix.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\alert.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\button.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\carousel.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\collapse.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\dropdown.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\modal.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\phantom.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\popover.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\scrollspy.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\tab.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\tooltip.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\unit\transition.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\vendor\jquery.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\vendor\qunit.css" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tests\vendor\qunit.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\tooltip.js" />
+    <Content Include="app\bower_components\bootstrap-sass\js\transition.js" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\ads.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\footer.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\header.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\nav-about.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\nav-components.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\nav-css.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\nav-customize.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\nav-getting-started.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\nav-javascript.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\nav-main.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\old-bs-docs.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_includes\social-buttons.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_layouts\default.html" />
+    <Content Include="app\bower_components\bootstrap-sass\_layouts\home.html" />
+    <Content Include="app\bower_components\es5-shim\es5-sham.js" />
+    <Content Include="app\bower_components\es5-shim\es5-sham.min.js" />
+    <Content Include="app\bower_components\es5-shim\es5-shim.js" />
+    <Content Include="app\bower_components\es5-shim\es5-shim.min.js" />
+    <Content Include="app\bower_components\es5-shim\tests\helpers\h-kill.js" />
+    <Content Include="app\bower_components\es5-shim\tests\helpers\h-matchers.js" />
+    <Content Include="app\bower_components\es5-shim\tests\helpers\h.js" />
+    <Content Include="app\bower_components\es5-shim\tests\index.html" />
+    <Content Include="app\bower_components\es5-shim\tests\index.min.html" />
+    <Content Include="app\bower_components\es5-shim\tests\lib\jasmine-html.js" />
+    <Content Include="app\bower_components\es5-shim\tests\lib\jasmine.css" />
+    <Content Include="app\bower_components\es5-shim\tests\lib\jasmine.js" />
+    <Content Include="app\bower_components\es5-shim\tests\lib\jasmine_favicon.png" />
+    <Content Include="app\bower_components\es5-shim\tests\lib\json2.js" />
+    <Content Include="app\bower_components\es5-shim\tests\spec\s-array.js" />
+    <Content Include="app\bower_components\es5-shim\tests\spec\s-date.js" />
+    <Content Include="app\bower_components\es5-shim\tests\spec\s-function.js" />
+    <Content Include="app\bower_components\es5-shim\tests\spec\s-number.js" />
+    <Content Include="app\bower_components\es5-shim\tests\spec\s-object.js" />
+    <Content Include="app\bower_components\es5-shim\tests\spec\s-string.js" />
+    <Content Include="app\bower_components\jquery\jquery-migrate.js" />
+    <Content Include="app\bower_components\jquery\jquery-migrate.min.js" />
+    <Content Include="app\bower_components\jquery\jquery.js" />
+    <Content Include="app\bower_components\jquery\jquery.min.js" />
+    <Content Include="app\bower_components\json3\lib\json3.js" />
+    <Content Include="app\bower_components\json3\lib\json3.min.js" />
+    <Content Include="app\favicon.ico" />
+    <Content Include="app\images\glyphicons-halflings-white.png" />
+    <Content Include="app\images\glyphicons-halflings.png" />
+    <Content Include="app\index.html" />
+    <Content Include="app\robots.txt" />
+    <Content Include="app\scripts\app.js" />
+    <Content Include="app\scripts\controllers\admin.js" />
+    <Content Include="app\scripts\controllers\main.js" />
+    <Content Include="app\views\admin.html" />
+    <Content Include="app\views\apiview.html" />
+    <Content Include="app\views\docs.html" />
+    <Content Include="app\views\main.html" />
+    <Content Include="Gruntfile.js" />
+    <Content Include="karma-e2e.conf.js" />
+    <Content Include="karma.conf.js" />
+    <Content Include="test\runner.html" />
+    <Content Include="test\spec\controllers\main.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64514</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64514/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

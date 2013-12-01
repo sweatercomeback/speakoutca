@@ -39,9 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\ContactFactory.cs" />
+    <Compile Include="Interfaces\IOrganization.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\CategoryGroup.cs" />
     <Compile Include="Models\Contact.cs" />
+    <Compile Include="Interfaces\IContact.cs" />
     <Compile Include="Models\Organization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace ShipB.SpeakOutCA.Data.Models
 {
-    public class Organization
+    
+
+    public class Organization : IOrganization
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public List<Contact> Contacts { get; set; }
+        public List<IContact> Contacts { get; set; }
     }
 }
